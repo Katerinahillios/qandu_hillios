@@ -1,1 +1,1 @@
-web: gunicorn quandu_hillios.wsgi --log-file -
+web: gunicorn qandu_hillios.wsgi --log-file - 

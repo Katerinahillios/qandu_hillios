@@ -26,9 +26,9 @@ SECRET_KEY = '6aez-j&-b+%7*1kzc19)%w8+$v7f9drgt%(%ud)@6_@79y!9_t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 if ON_HEROKU == True:
-  DEBUG = False
+    DEBUG = False
 else:
-  DEBUG = True
+    DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -93,7 +93,7 @@ else:
     DATABASES['default'] =  dj_database_url.config()
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
     ALLOWED_HOSTS = ['*']
-
+    
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
