@@ -1,6 +1,6 @@
 from django.db import models
 title_options = (
-(0, ''),
+(0, 'Select...'),
 (1, 'Mr'),
 (2, 'Ms'),
 (3, 'Mrs'),
@@ -16,4 +16,4 @@ class Message(models.Model):
   created_at = models.DateTimeField(auto_now_add=True)
 
   def __unicode__(self):
-     return self.title
+     return self.name

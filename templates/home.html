@@ -1,9 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
+{% load staticfiles %}
+
 <div class="jumbotron">
   <h1>Katerina Hillios</h1>
-  <p><i>Public Relations Major, Computer Information Systems Minor</i></p>
-  <p><a href="{% url 'message_create' %}" class="btn btn-lg btn-primary">Ask Me Anything!</a></p>
+  <center><img src="{% static "Images/me.jpg" %}" class="img-circle" alt="Me"/></center>
+  <br><p><a href="{% url 'resume' %}" class="btn btn-lg btn-primary">Resume</a></p>
+  <p>Public Relations Major, Computer Information Systems Minor</p>
 </div>
+
+
 {% endblock %}
 

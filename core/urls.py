@@ -5,5 +5,6 @@ urlpatterns = patterns('',
     url(r'^$', Home.as_view(), name='home'),
     url(r'^message/create/$', MessageCreateView.as_view(), name='message_create'),
     url(r'^success/$', Success.as_view(), name='success'),  
-    url(r'^about_me/$', AboutMe.as_view(), name='about_me'),                  
+    url(r'^about_me/$', AboutMe.as_view(), name='about_me'),
+    url(r'^resume/$', Resume.as_view(), name='resume'),                   
 )
