@@ -1,8 +1,15 @@
 from django.db import models
+title_options = (
+(0, ''),
+(1, 'Mr'),
+(2, 'Ms'),
+(3, 'Mrs'),
+(4, 'Dr'),
+)
 
 # Create your models here.
 class Message(models.Model):
-  title = models.CharField(max_length=300, default="")
+  title = models.IntegerField(choices=title_options, default=0)
   name = models.CharField(max_length=300, default="")
   email = models.CharField(max_length=300, default="")
   message = models.TextField(null=True, blank=True, default="")

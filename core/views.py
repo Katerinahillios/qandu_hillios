@@ -11,4 +11,7 @@ class MessageCreateView(CreateView):
   model = Message
   template_name = "message/message_form.html"
   fields = {'title', 'name', 'email', 'message'}
-  success_url = reverse_lazy('home')
+  success_url = reverse_lazy('success')
+  
+class Success(TemplateView):
+  template_name = "success.html"
