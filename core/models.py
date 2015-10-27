@@ -1,5 +1,5 @@
 from django.db import models
-title_options = (
+status_options = (
 (0, 'Select...'),
 (1, 'Mr'),
 (2, 'Ms'),
@@ -9,7 +9,7 @@ title_options = (
 
 # Create your models here.
 class Message(models.Model):
-  title = models.IntegerField(choices=title_options, default=0)
+  status = models.IntegerField(choices=status_options, default=0)
   name = models.CharField(max_length=300, default="")
   email = models.CharField(max_length=300, default="")
   message = models.TextField(null=True, blank=True, default="")
